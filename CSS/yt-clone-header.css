@@ -1,0 +1,305 @@
+
+.header
+{
+    height:55px;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    margin-top:3px;
+    margin-bottom:18.67px;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    background-color: white;
+    z-index:2;
+    
+}
+
+
+.left-section
+{
+/* background-color:aqua; */
+font-family: 'Roboto Condensed', sans-serif;
+display: flex;
+align-items: center;
+width:250px;
+margin-left:40px;
+}
+
+.text
+{
+    font-size:29px;
+    letter-spacing:-1px;
+    font-family: 'Pathway Gothic One', sans-serif,Arial;
+    font-weight: bolder;
+    
+}
+
+.middle-section
+{
+  /* background-color: rgb(0, 51, 255); */
+  flex:1;
+  margin-left: 45px;
+  margin-right:117px;
+  max-width:700px;
+  display: flex;
+  align-items: center;
+  flex-direction: row; 
+}
+
+.right-section
+{
+    width:200px;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    padding: 6px;
+    flex-shrink:0;
+    /* flex:1; */
+}
+
+.fa-microphone
+{
+    padding-left:12px;
+}
+
+.magn-glass
+{
+  border-top-right-radius:21px;
+  border-bottom-right-radius:21px;
+  height:28px;
+    width:55px;
+    margin:0;
+    padding:8px;
+    display:flex;
+    align-items:center;
+    background-color:rgb(251, 247, 247);
+    border-top:0.4px solid rgb(231, 228, 228);
+
+    border-right:0.4px solid rgb(231, 228, 228);
+
+    border-bottom:0.4px solid rgb(231, 228, 228);
+  }
+
+  .magn-glass:hover
+  {
+    background-color: whitesmoke;
+  }
+
+
+ .fa-magnifying-glass
+{
+   padding-left:13px;
+   height:12px;
+   padding-top:10px;
+}
+
+
+.search-bar
+{
+ 
+  /* margin-left:145px; */
+  padding:8px;
+  margin-top:0px;
+  border-top-left-radius:21px;
+  border-bottom-left-radius:21px;
+  border:none;
+  height:28px;
+  border:0.4px solid rgb(231, 228, 228);
+  font-size: 16px;
+  flex:1;
+  box-shadow:inset 1px 1px 4px rgba(0, 0, 0, 0.1);
+  outline:none;
+  width:0px;
+  position:relative;
+}
+
+.search-bar::placeholder{
+
+  font-size:18px;
+
+}
+
+
+.bars{
+
+ margin-right:18px;
+ padding:7px;
+ }
+
+.bars:hover{
+   
+  background-color: rgb(221, 219, 219);
+
+  border-radius:100px;
+  padding:7px;
+  /* 
+  padding-left:8px; */
+  /* margin-left:12px;
+  margin-right:10px; */
+
+
+}
+
+.microphone
+{
+ /* margin-left:13px; */
+ height:30px;
+ width:30px;
+ position: relative;
+ /* background-color: aqua; */
+ padding:8px 8.7px 0px 0px; 
+}
+
+.microphone:hover{
+
+  background-color: rgb(221, 219, 219);
+  border-radius:80px;
+   
+}
+
+.square-plus
+{
+  /* margin-left:13px; */
+  height:25px;
+  width:25px;
+  display:flex;
+ align-items: center;
+ justify-content: center;
+  position:relative;
+  padding:6px;
+
+}
+
+.square-plus:hover
+{
+
+  background-color: rgb(221, 219, 219);
+    border-radius:90px;
+    padding:6px;
+}
+
+.bell{
+  /* margin-left:13px; */
+  height:25px;
+  width:25px;
+
+  position:relative;
+  padding:7px 6px 3.2
+  px 6px;
+
+}
+
+
+.bell:hover
+{
+
+  background-color: rgb(221, 219, 219);
+    border-radius:40px; 
+}
+
+
+.notifications
+{
+  position:absolute;
+  top:3px;
+  right:-2px;
+  background-color:#c00;
+  border-radius:18px;
+  width:14px;
+  height:14px;
+  font-size:12px;
+  padding-left:1px;
+  padding-bottom:1px;
+  text-align:center;
+  border:2px solid white;
+  font-family: 'Arial', sans-serif;
+  color:white;
+
+
+
+  
+}
+
+.tooltip
+{
+  display:block;
+  position:absolute;
+  bottom:-22px;
+  background-color: rgb(100, 98, 98);
+  color:white;
+  border-radius:4px;
+  padding:6px;
+  opacity:0.7;
+
+  font-size:12px;
+  
+}
+
+.tooltip-voice
+{
+  display:block;
+  position:absolute;
+  bottom:-31px;
+  right:-31px;
+  width:70px;
+  background-color: rgb(100, 98, 98);
+  color:white;
+  border-radius:4px;
+  padding:6px;
+  opacity:0.7;
+  font-weight:500;
+
+  font-size:12px;
+}
+
+
+.tooltip-create
+{
+  display:block;
+  position:absolute;
+  background-color: rgb(100, 98, 98);
+  color:white;
+  border-radius:4px;
+  padding:6px;
+  opacity:0.7;
+  bottom:-31px;
+  right:-10px;
+  font-weight:500;
+  font-family:'Roboto','Arial';
+  font-size:12px;
+
+}
+
+.tooltip-notif
+{
+  display:block;
+  position:absolute;
+  background-color: rgb(100, 98, 98);
+  color:white;
+  border-radius:4px;
+  padding:6px;
+  opacity:0.7;
+  bottom:-32px;
+  right:-31px;
+  font-weight:500;
+  font-family:'Roboto','Arial';
+  font-size:12px;
+
+}
+
+.magn-glass .tooltip, .microphone .tooltip-voice, .square-plus .tooltip-create, .bell .tooltip-notif
+{
+ opacity:0;
+ transition:opacity 0.15s;
+ pointer-events:none;
+}
+
+.magn-glass:hover .tooltip, .microphone:hover .tooltip-voice, .square-plus:hover .tooltip-create, .bell:hover .tooltip-notif
+
+{
+ opacity:0.7;
+ white-space:nowrap;
+ 
+}

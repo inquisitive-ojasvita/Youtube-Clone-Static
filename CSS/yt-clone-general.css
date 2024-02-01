@@ -1,0 +1,15 @@
+body{
+
+    margin: 0;
+    padding-top:90px;
+    height:700px;
+    padding-left:150px;
+    padding-right:20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}

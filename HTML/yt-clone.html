@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>YouTube</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/text.css">
+  <link rel="stylesheet" href="/CSS/yt-clone-general.css">
+  <link rel="stylesheet" href="/CSS/yt-clone-header.css">
+  <link rel="stylesheet" href="/CSS/yt-clone-sidebar.css">
+  <link rel="stylesheet" href="/CSS/yt-clone-video.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed:wght@700&display=swap"
+    rel="stylesheet">
+
+
+  <link rel="stylesheet" href="css/all.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+  <header class="header">
+
+    <!--HEADER is flex but "left-section" is still a div. So, display:flex set, with align items-center;
+  Flexbox doesn't affect the layers below
+  NESTED FLEXBOX-->
+
+    <div class="left-section">
+      <div class="bars">
+        <i class="fa-solid fa-bars fa-lg"></i>
+      </div>
+      <i class="fa-brands fa-youtube fa-2xl" style="color: #fb0000;"></i>
+      <div class="text">
+        <b>YouTube</b>
+      </div>
+    </div>
+
+    <div class="middle-section"><input class="search-bar" type="text" placeholder="Search">
+      <span class="magn-glass">
+        <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+        <div class="tooltip">Search</div>
+      </span>
+
+
+      <div class="microphone">
+        <i class="fa-solid fa-microphone fa-xl"></i>
+        <div class="tooltip-voice">Voice Search</div>
+      </div>
+    </div>
+
+    <div class="right-section">
+      <div class="square-plus">
+        <i class="fa-regular fa-square-plus fa-xl"></i>
+        <div class="tooltip-create">Create</div>
+      </div>
+
+      <div class="bell">
+        <i class="fa-regular fa-bell fa-xl"></i>
+        <div class="notifications">3</div>
+        <div class="tooltip-notif">Notifications</div>
+      </div>
+
+      <div class="user">
+        <i class="fa-solid fa-circle-user fa-2xl"></i>
+      </div>
+    </div>
+
+  </header>
+
+  <nav class="sidebar">
+
+    <div class="sidebar-item">
+      <img class="pic" src="/IMAGES/homepage.png">
+      <div class="text-sidebar">Home</div>
+    </div>
+
+    <div class="sidebar-item">
+      <img class="pic" src="/IMAGES/short-film.png">
+      <!-- <p class="text-sidebar">Shorts</p>   -->
+      <div class="text-sidebar">Shorts</div>
+    </div>
+
+    <div class="sidebar-item">
+      <img class="pic" src="/IMAGES/subscribe.png" alt="">
+      <!-- <p class="text-sidebar-3">Subscriptions</p>  -->
+      <div class="text-sidebar">Subscriptions</div>
+    </div>
+
+    <div style="border-bottom: 1.5px solid lightgray;
+margin-left:15px;
+ width:100%;
+"></div>
+
+    <!--2-block -->
+    <div class="sidebar-item adjust">
+      <img class="pic" src="/IMAGES/library.png" alt="">
+      <!-- <p class="text-sidebar">Library</p>  -->
+      <div class="text-sidebar">Library</div>
+    </div>
+
+    <div class="sidebar-item">
+      <img class="pic" src="/IMAGES/history.png" alt="">
+      <!-- <p class="text-sidebar">Library</p>  -->
+      <div class="text-sidebar">History</div>
+    </div>
+
+    <div class="sidebar-item">
+      <img class="pic" src="/IMAGES/youtube.png" alt="">
+      <!-- <p class="text-sidebar">Library</p>  -->
+      <div class="text-sidebar">Your videos</div>
+    </div>
+
+    <div class="sidebar-item">
+      <img class="pic" src="/IMAGES/clock.png" alt="">
+      <!-- <p class="text-sidebar">Watch Later</p>  -->
+      <div class="text-sidebar">Watch Later</div>
+    </div>
+
+    <div class="sidebar-item">
+      <img class="pic" src="/IMAGES/like.png" alt="">
+      <!-- <p class="text-sidebar">Watch Later</p>  -->
+      <div class="text-sidebar
+        ">Liked videos</div>
+    </div>
+
+    <div class="sidebar-item">
+      <img class="pic" src="/IMAGES/down-arrow.png" alt="">
+      <!-- <p class="text-sidebar">Watch Later</p>  -->
+      <div class="text-sidebar">Show more</div>
+    </div>
+
+    <div style="border-bottom: 1.5px solid lightgray;
+margin-left:15px;
+ width:100%;
+"></div>
+
+
+
+  </nav>
+
+
+  <main class="layout">
+
+    <!--1-->
+    <section class="video-preview">
+      <!--BLOCK ELEM TAKE UP THE ENTIRE LINE IN THE CONTAINER AND NOT THE WHOLE PAGE  -->
+
+      <div class="vid"><img class="thumbnail" src="/IMAGES/just-pretend.jpg" alt="tech">
+        <div class="video-time">3:59</div>
+      </div>
+
+      <div class="video-grid">
+        <div class="logo"><img src="/IMAGES/logo-img.jpg" class="img1" width=100%></div>
+        <div class="about">
+          <p class="video-title"><b>BAD-OMENS-
+            </b>
+            Just Pretend (Official Music Video)
+          </p>
+
+          <p class="video-author">
+            Sumerian Records &#9834;
+          </p>
+
+          <p class="video-stats">
+            849K views &#183; 5 days ago
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2-->
+    <section class="video-preview">
+      <!--BLOCK ELEM TAKE UP THE ENTIRE LINE IN THE CONTAINER AND NOT THE WHOLE PAGE  -->
+
+      <div class="vid">
+        <img class="thumbnail-1" src="/IMAGES/yt-cs50.jpg" alt="tech">
+        <div class="video-time">14:20</div>
+
+      </div>
+
+      <div class="video-grid">
+        <div class="logo-1"><img src="/IMAGES/codeCamp.jpg" class="img1" width=100%>
+        </div>
+        <div class="about-1">
+          <p class="video-title">
+            <b>
+              Harvard CS50’s
+            </b>
+            Introduction to Programming with Python – Full University Course
+          </p>
+
+          <p class="video-author">
+            freeCodeCamp.org &check;
+          </p>
+
+          <p class="video-stats">
+            876K views &#183; 1 month ago
+          </p>
+
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- 3-->
+    <section class="video-preview">
+
+      <div class="vid"><img class="thumbnail" src="/IMAGES/hozier.jpg" alt="tech">
+        <div class="video-time">4:44</div>
+      </div>
+
+      <div class="video-grid">
+        <div class="logo"><img src="/IMAGES/hozier-logo.jpg" class="img1" width=100%></div>
+        <div class="about">
+          <p class="video-title"><b>Hozier-Francesca</b> (Official Music Video)
+          </p>
+
+          <p class="video-author">
+            Hozier &#9834;
+          </p>
+
+          <p class="video-stats">
+            697K views &#183; 12 days ago
+          </p>
+
+        </div>
+      </div>
+    </section>
+
+    <!--4-->
+    <section class="video-preview">
+
+      <div class="vid">
+        <img class="thumbnail-1" src="/IMAGES/ai-img.png" alt="tech">
+        <div class="video-time">10:45</div>
+      </div>
+
+      <div class="video-grid">
+        <div class="logo-1"><img src="/IMAGES/ai-logo.jpg" class="img1" width=100%></div>
+        <div class="about-1">
+          <p class="video-title">
+            <b>
+              10 FREE AI Tools
+            </b>
+            That Feels Illegal To Know!
+          </p>
+
+          <p class="video-author">
+            i Social You &#10003;
+          </p>
+
+          <p class="video-stats">
+            420K views &#183; 2 months ago
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+    <!--5-->
+    <section class="video-preview">
+
+      <div class="vid">
+        <img class="thumbnail" src="/IMAGES/courage-1.webp" alt="tech">
+        <div class="video-time">1:34:20</div>
+      </div>
+
+      <div class="video-grid">
+        <div class="logo"><img src="/IMAGES/cn.jpg" class="img1" width=100%></div>
+        <div class="about">
+          <p class="video-title"><b>Courage The Cowardly Dog</b>
+            - Mega Collection #1
+          </p>
+
+          <p class="video-author">
+            Cartoon Network &#10003;
+          </p>
+
+          <p class="video-stats">
+            5.2M views &#183; 8 months ago
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!--6-->
+    <section class="video-preview">
+      <div class="vid">
+        <img class="thumbnail-1" src="/IMAGES/bean.jpg" alt="tech">
+        <div class="video-time">2:59:33</div>
+      </div>
+
+      <div class="video-grid">
+        <div class="logo-1"><img src="/IMAGES/logo-img.jpg" class="img1" width=100%></div>
+        <div class="about-1">
+          <p class="video-title">
+            <b>Is Mr Bean The Worst Hotel Guest EVER?
+            </b>
+            | Full Episodes | Classic Mr Bean
+          </p>
+
+          <p class="video-author">
+            Classic Mr Bean &#10003;
+          </p>
+
+          <p class="video-stats">
+            7.7M views &#183; 2 years ago
+          </p>
+
+
+
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+  <!--BLOCK ELEM TAKE UP THE ENTIRE LINE IN THE CONTAINER AND NOT THE WHOLE PAGE  -->
+  <!--BLOCK ELEM TAKE UP THE ENTIRE LINE IN THE CONTAINER AND NOT THE WHOLE PAGE  -->
+
+</body>
+
+</html>
